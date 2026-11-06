@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saved</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="grain"></div>
+
+<header class="chrome">
+  <a class="wordmark" href="#/">Saved</a>
+  <nav class="nav" id="nav"></nav>
+  <form class="search" id="search-form" role="search">
+    <input type="search" id="q" placeholder="Search captions, @creators, tags…" autocomplete="off">
+  </form>
+</header>
+
+<header class="masthead" id="masthead" hidden></header>
+
+<div class="filters" id="filters" hidden>
+  <div class="filter-row" id="status-filters"></div>
+  <div class="filter-row" id="type-filters"></div>
+  <div class="result-meta" id="result-meta"></div>
+</div>
+
+<main id="main"></main>
+
+<section class="export-panel" id="export-panel">
+  <div class="export-head">
+    <div class="export-title">Kept list</div>
+    <div class="export-meta" id="export-meta">0 kept</div>
+    <button type="button" class="chip on" id="copy-kept">Copy kept</button>
+  </div>
+  <textarea id="export-box" readonly placeholder="Keep items and their links and blurbs will show up here."></textarea>
+</section>
+
+<div class="toast" id="toast">Copied</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
